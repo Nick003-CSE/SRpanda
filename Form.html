@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="event">
+        <form action="Registration_Successfull">
+            <h1 class="heading">
+             Event Registration Form
+            </h1>
+            <hr>
+            <p><b>Required field are followed by <span id="star"> * </span></b></p>
+            <p>First Name: <span id="star"> * </span> <input type="text" name="First Name" required placeholder="Enter your first name"></p>
+            <p>Middle Name: <input type="text" name="Middle Name" placeholder="Enter your middle name"></p>
+            <p>Last Name: <span id="star"> * </span> <input type="text" name="Last Name" required placeholder="Enter your last name"></p>
+            <p class="intrest">
+                Gender: <span id="star"> * </span> 
+                <fieldset>
+                    
+                     Male<input type="radio" name="Gender" id="Male" value="male" required >
+                     Female<input type="radio" name="Gender" id="Female" value="female" required>
+                     Other<input type="radio" name="Gender" id="Other" value="other" required >
+                </fieldset>
+            </p>
+            <p>
+                Phone Number: <span id="star"> * </span> <input type="number" name="Phone" id="phone" required placeholder="Enter your phone number">
+            </p>
+            <p>Email ID: <span id="star"> * </span> <input type="email" name="email" id="email" required placeholder="rahul123@gmail.com" ></p>
+            <p>Address: <textarea name="address" id="address" cols="50" rows="5" placeholder="Enter your address"></textarea></p>
+            <p>Pincode <span id="star"> * </span> : <input type="number" name="pincode" id="pincode" required placeholder="123456"></p>
+            <p>How many people will come with you ? <span id="star"> * </span> <br>
+                <select name="people" id="people" required >
+                    <option value="">--select number of people--</option>
+                    <option value="None">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+            <p class="intrest">
+                Are you intrested to attend the event ? <span id="star"> * </span> 
+                <fieldset>     
+                 Yes<input type="radio" name="event" id="yes" required>
+                 No<input type="radio" name="event" id="no" required>
+                </fieldset> 
+            <p class="align">
+                <input type="submit" value="SUBMIT" class="submit">
+                <input type="reset" value="RESET" class="reset">
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
